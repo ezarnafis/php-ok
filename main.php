@@ -655,14 +655,13 @@ if($pilihbarang == 2){
             $expmu=@$expnya["data"]["current_tier"]["member_xp"];
     
             if ($test99 == true) {
-              echo @color('blue',"Success");
-              //if ($expmu1 == $expmu){
+                echo @color('blue',"Success! Delay 30s.");
                 $expmu=$expmu+100;
-              //}
+                sleep(30);
             }
             else {
-              echo @color('red',"Failed! Delay 120s.");
-              sleep(120);
+                echo @color('red',"Failed! Delay 30s.");
+                sleep(30);
             }
             echo "\n";
             echo @color('green', "==> SALDO = ");
